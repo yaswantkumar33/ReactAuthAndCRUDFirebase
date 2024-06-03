@@ -2,7 +2,7 @@
   "name": "reactsociallogin",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/yaswantkumar33/ReactAuthAndCRUDFirebasenpm",
+  "homepage": "https://github.com/yaswantkumar33/ReactAuthAndCRUDFirebase",
   "type": "module",
   "scripts": {
     "dev": "vite",

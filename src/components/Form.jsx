@@ -24,6 +24,9 @@ export default function Form() {
   const [MovieList, SetmovieList] = useState([]);
   const [errval, seterrval] = useState({ emailerr: "", passworderr: "" });
   const [Formflag, setfomflag] = useState(true);
+  if (auth?.currentUser?.email && Formflag) {
+    setfomflag(false);
+  }
   console.log(auth?.currentUser?.email);
   function onChangeHandeler(name, value) {
     setVals({ ...Vals, [name]: value });
