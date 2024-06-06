@@ -58,7 +58,6 @@ export default function Form() {
       console.log(err);
     }
   };
-
   // create functions
   const getMovieList = async () => {
     try {
@@ -85,7 +84,6 @@ export default function Form() {
     await addDoc(moviecollectionRef, obj);
     getMovieList();
   };
-
   return (
     <>
       <div>
@@ -117,5 +115,4 @@ export default function Form() {
     </>
   );
 }
-
 // request.auth != null && request.auth.uid == request.resource.data.userId;
