@@ -118,5 +118,4 @@ export default function Form() {
   );
 }
 
-// request.auth != null && request.auth.uid == request.resource.data.userId
-8;
+// request.auth != null && request.auth.uid == request.resource.data.userId;
