@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 // import { auth } from './../../../firebase-tutorial/src/config/firebase';
 // import { GoogleAuthProvider } from 'firebase/auth/c';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -26,3 +27,4 @@ const analytics = getAnalytics(app);
 export const auth = getAuth(app)
 export const googleProvider = new GoogleAuthProvider();
 export const db = getFirestore(app);
+export const storage = getStorage(app);

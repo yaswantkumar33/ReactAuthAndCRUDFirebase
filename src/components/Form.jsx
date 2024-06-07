@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db, auth, googleProvider } from "../config/firebase";
+import { db, auth, googleProvider, storage } from "../config/firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithPopup,
@@ -13,11 +13,14 @@ import {
   doc,
   updateDoc,
 } from "firebase/firestore";
+import { ref } from 'firebase/database'
+
 import Login from "./Login";
 import Signup from "./Sign-up";
 import Display from "./Display";
 import Create from "./create";
 import File from "./file";
+// import { Storage } from 'firebase/storage';
 export default function Form() {
   const moviecollectionRef = collection(db, "Movies");
   const [switchflag, setflag] = useState(false);
