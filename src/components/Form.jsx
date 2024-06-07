@@ -17,6 +17,7 @@ import Login from "./Login";
 import Signup from "./Sign-up";
 import Display from "./Display";
 import Create from "./create";
+import File from "./file";
 export default function Form() {
   const moviecollectionRef = collection(db, "Movies");
   const [switchflag, setflag] = useState(false);
@@ -110,6 +111,7 @@ export default function Form() {
         <>
           <Display />
           <Create Create={addmoview} />
+          <File />
         </>
       )}
     </>
